@@ -6,3 +6,15 @@ Version: 1.0
 Tags: painto, porfolio
 Copyright: (c) 2012 DESCOVI
 */
+.yellow {
+  color: #fde60d;
+}
+.grey_white {
+  color: #6b6b6b;
+}
+.black_90 {
+  color: #0b0b0b;
+}
+.grey_dark {
+  color: #262626;
+}

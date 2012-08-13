@@ -17,16 +17,16 @@
     </a><!--#logo-->
     <div id="menu" class="menu">
       <div id="portfolio" class="element">
-        <a href="#">portfolio</a>
+        <a href="./portfolio">portfolio</a>
       </div>
       <div id="about" class="element">
-        <a href="#">about</a>
+        <a href="./about">about</a>
       </div>
       <div id="resume" class="element">
-        <a href="#">resume</a>
+        <a href="./resume">resume</a>
       </div>
       <div id="contact" class="element">
-        <a href="#">contact</a>
+        <a href="./contact">contact</a>
       </div>
     </div>
   </div><!--.header-content-->

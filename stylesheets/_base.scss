@@ -14,11 +14,8 @@ $grey_dark  : #262626;
 
 @import "compass/reset";
 @import "compass/utilities";
-
+@import 'susy';
 .yellow       {color:$yellow;}
 .grey_white   {color:$grey_white;}
 .black_90     {color:$black_90}
 .grey_dark    {color:$grey_dark;}
-
-body
-  background-color:#ff0

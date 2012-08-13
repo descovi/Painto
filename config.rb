@@ -20,6 +20,8 @@ color_output = false
 
 # If you prefer the indented syntax, you might want to regenerate this
 # project again passing --syntax sass, or you can uncomment this:
-# preferred_syntax = :sass
+preferred_syntax = :sass
+
+require "/Users/descovi/.rvm/gems/ruby-1.9.3-p194/gems/susy-1.0.rc.4/lib/susy.rb"
 # and then run:
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass

@@ -1,11 +1,23 @@
 
-$yellow: #FDE60D
-$grey_white: #6B6B6B
-$black: #0B0B0B
-$grey_dark: #262626
-
 @import "compass/reset"
 @import "compass/utilities"
+@import "compass/css3/border-radius"
+@import "compass/typography/links"
+@import "compass/typography/links/link-colors"
+
+$font-size-medium: 12px
+
+$yellow: #FDE60D
+$black: #0B0B0B
+$grey_white: #6B6B6B
+$grey_dark: #262626
+
+$layout_width: 880px
+
+$font-family: Helvetica, Arial
+
+
+// Colore
 
 .yellow
   color: $yellow
@@ -18,3 +30,14 @@ $grey_dark: #262626
 
 .grey_dark
   color: $grey_dark
+
+// Border radius
+
+.simple   
+  @include border-radius(4px, 4px)
+
+.compound 
+  @include border-radius(2px 5px, 3px 6px)
+
+.crazy
+  @include border-radius(1px 3px 5px 7px, 2px 4px 6px 8px)

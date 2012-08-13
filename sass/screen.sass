@@ -1,0 +1,59 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+@import "base"
+
+a
+  +link-colors($yellow, $yellow, $yellow, $yellow, $yellow)
+  text-decoration: none
+
+a:hover
+  text-decoration: underline
+
+.default
+  background-color: $grey_dark
+  color: $grey_white
+  font-family: $font-family
+
+header 
+  .header-content
+    max-width: $layout_width
+    margin: 0 auto
+    position: relative
+    margin-top: 20px
+    .logo
+      position: absolute
+      left: 0
+      color: $yellow
+      margin: 0 auto
+      background-image: url('../images/logopainto.png')
+      background-repeat: no-repeat
+      text-indent: -999px
+      height: 92px
+      width: 92px
+      display: block
+    .menu
+      color: #fff
+      margin-left: 180px
+      padding-top: 76px
+      font-size: 10px
+      .element
+        float: left
+        margin-right: 10px
+        text-transform: uppercase
+
+.content
+  clear: both
+  max-width: $layout_width
+  margin: 0 auto
+
+footer
+  background-color: $black
+  position: absolute
+  bottom: 0
+  width: 100%
+  .footer-content
+    margin: 0 auto
+    max-width: $layout_width

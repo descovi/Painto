@@ -2,3 +2,5 @@
 .DS_Store
 .sass-cache/
 stylesheets/screen.css
+
+stylesheets/portfolio.css

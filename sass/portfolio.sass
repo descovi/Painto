@@ -1,0 +1,31 @@
+$box_width: 221px
+$box_height: 221px
+$title_height: 37px
+
+.portfolio
+  .box
+    width: 221px
+    height: $box_width + $title_height
+    overflow: hidden
+    display: block
+    position: relative
+    .title_box
+      z-index: 10
+      background-color: $grey_14
+      position: absolute
+      bottom: 0
+      height: 37px
+      font-size: 8px
+      text-align: center
+      width: 100%
+      text-transform: uppercase
+      display: block
+    .title
+      padding-top: 15px
+      padding-bottom: 15px
+    .img
+      z-index: 1
+      background-size: 221px 210px
+      display: block
+      width: $box_width
+      height: $box_height

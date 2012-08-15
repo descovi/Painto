@@ -41,7 +41,7 @@ if ( $site_description && ( is_home() || is_front_page() ) )
 
 <header id="header" class="header">
   <div class="header-content">
-    <a id="logo" class="logo">
+    <a id="logo" href="<?php echo site_url() ?>" class="logo">
       Painto.net
     </a><!--#logo-->
     <nav id="access" role="navigation">

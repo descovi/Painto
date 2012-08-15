@@ -37,7 +37,7 @@ if ( $site_description && ( is_home() || is_front_page() ) )
   <![endif]-->
   </head>
   <body class="default">
-    <div id="extra-decoration"></div>
+    <div id="extra-decoration" class="extra-decoration"></div>
 
 <header id="header" class="header">
   <div class="header-content">

@@ -1,14 +1,20 @@
 $box_width: 221px
 $box_height: 221px
 $title_height: 37px
+$margin_box: 22px
 
 .portfolio
+  padding-top: $margin_box/2
   .box
     width: 221px
     height: $box_width + $title_height
     overflow: hidden
     display: block
     position: relative
+    float: left
+    margin-right: $margin_box
+    margin-top: $margin_box/2
+    margin-bottom: $margin_box/2
     .title_box
       z-index: 10
       background-color: $grey_14
@@ -25,7 +31,8 @@ $title_height: 37px
       padding-bottom: 15px
     .img
       z-index: 1
-      background-size: 221px 210px
+      background-size: auto 221px 
+      background-position: center center 
       display: block
       width: $box_width
       height: $box_height

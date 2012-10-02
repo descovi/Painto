@@ -5,9 +5,10 @@ Template Name: Portfolio
 get_header();
 ?>
 <div class="portfolio">
+  <?php add_filter( 'post_limits', -1 ); ?>
 <?php
 
-$the_query = new WP_Query('post_type=proggeto'); 
+$the_query = new WP_Query(array('post_type'=>'proggeto')); 
 $counter = 0;
 
 while ( $the_query->have_posts() ) : $the_query->the_post();
@@ -22,6 +23,7 @@ while ( $the_query->have_posts() ) : $the_query->the_post();
     <div style="display:none" class="gallery_the_other">
     <?php 
     $members = get_group('gallery');
+    
     foreach ($members as $key => $value):
       if ($key != 1):
         $img = get('img_images',$key,$value);
@@ -34,6 +36,7 @@ while ( $the_query->have_posts() ) : $the_query->the_post();
   </div>
 <? endwhile ?>
 </div>
+<div style="margin-bottom:60px;height:1px;clear:both"></div>
 
 <?php wp_reset_postdata() ?>
 <?php get_footer() ?>

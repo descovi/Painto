@@ -58,21 +58,25 @@ if ( $site_description && ( is_home() || is_front_page() ) )
   <script type="text/javascript">
   $(document).ready(function() {
 $(".fancybox")
-    .fancybox({
-        padding    : 0,
-        margin     : 5,
-        nextEffect : 'fade',
-        prevEffect : 'none',
-        autoCenter : false,
-        afterLoad  : function () {
-            $.extend(this, {
-                aspectRatio : true,
-                type    : 'html',
-                content : '<div class="fancybox-image" style="background-image:url(' + this.href + '); background-size: cover; background-position:50% 50%;background-repeat:no-repeat;height:100%;width:100%;" /></div>'
-            });
+    .fancybox(
+    {
+      helpers : {
+        title: {
+            type: 'outside'
         }
-
+      },
+      padding    : 0,
+      margin     : 0,
+      nextEffect : 'fade',
+      prevEffect : 'none',
+      closeBtn: false,
+      autoPlay: false,
+      nextClick: true,
+      beforeLoad: function() {
+        this.title = $(this.element).attr('caption');
+      }
     })
+
 })
 </script>
 <style>

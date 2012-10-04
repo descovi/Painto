@@ -16,7 +16,7 @@ while ( $the_query->have_posts() ) : $the_query->the_post();
   ?>
 
   <div class="box">
-    <a rel="group_<? echo $counter ?>" href="<?php echo get('img_images')?>"  class="fancybox" title="<?php echo get("img_info") ?>">
+    <a rel="group_<? echo $counter ?>" href="<?php echo get('img_images')?>"  class="fancybox" caption="<?php echo get("img_info") ?>">
       <div class="title_box"><h3 class="title"><?php the_title() ?></h3></div>
       <div class="img" style="background-image:url('<?php echo get('cover_images') ?>')" ></div>
     </a>
@@ -28,7 +28,7 @@ while ( $the_query->have_posts() ) : $the_query->the_post();
       if ($key != 1):
         $img = get('img_images',$key,$value);
         $info = get('img_info',$key,$value) ?>
-        <a rel="group_<? echo $counter ?>" href="<?php echo $img ?>" class="fancybox" title="<?php echo $info ?>"></a><?  
+        <a rel="group_<? echo $counter ?>" href="<?php echo $img ?>" class="fancybox" caption="<?php echo $info ?>"></a><?  
       endif;
      endforeach ;
     ?>

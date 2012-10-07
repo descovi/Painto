@@ -69,7 +69,7 @@ $(".fancybox")
       margin     : 0,
       nextEffect : 'fade',
       prevEffect : 'none',
-      closeBtn: false,
+      closeBtn: true,
       autoPlay: false,
       nextClick: true,
       beforeLoad: function() {

@@ -5,6 +5,7 @@
 
 @import "base"
 @import "portfolio"
+@import "page"
 
 a
   +link-colors($grey_55, $yellow, $grey_55, $grey_55, $grey_55)
@@ -13,8 +14,10 @@ a
 a:hover
   text-decoration: none
 
-.default
+/* sfondo */
+.default 
   background-color: $grey_dark
+  background-image: url('../images/bg_black_modded.png')
   color: $grey_55
   font-family: $font-family
   .extra-decoration
@@ -37,7 +40,7 @@ header
       width: 221px
       height: 148px
       display: block
-      margin-right: 150px
+      margin-right: 264px
     .menu
       color: #fff
       margin-left: 180px
@@ -45,7 +48,7 @@ header
       font-size: 10px
       .menu-item
         float: left
-        margin-right: 50px
+        margin-left: 50px
         text-transform: uppercase
         list-style-type: none
 

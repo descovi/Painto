@@ -1,0 +1,62 @@
+/* line 1, ../sass/page.sass */
+.page {
+  margin-top: 50px; }
+  /* line 3, ../sass/page.sass */
+  .page .entry-header {
+    background-color: black;
+    padding-top: 10px;
+    padding-left: 10px; }
+    /* line 7, ../sass/page.sass */
+    .page .entry-header .box-header {
+      margin-right: 10px;
+      margin-bottom: 10px;
+      background-color: #333333;
+      max-width: 201px; }
+      /* line 12, ../sass/page.sass */
+      .page .entry-header .box-header .box-color-decoration {
+        background-color: #666666;
+        float: left;
+        width: 19px;
+        height: 19px;
+        margin-right: 10px; }
+      /* line 18, ../sass/page.sass */
+      .page .entry-header .box-header .entry-title {
+        font-size: 12px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        text-transform: uppercase;
+        color: #fde60d; }
+  /* line 25, ../sass/page.sass */
+  .page .entry-content {
+    position: relative;
+    clear: both;
+    font-size: 12px;
+    padding-bottom: 10px;
+    margin-bottom: 80px;
+    last-margin-bottom: 0; }
+    /* line 33, ../sass/page.sass */
+    .page .entry-content p {
+      line-height: 20px;
+      margin-bottom: 6px;
+      last-margin-bottom: 0; }
+    /* line 38, ../sass/page.sass */
+    .page .entry-content em {
+      font-style: italic; }
+      /* line 40, ../sass/page.sass */
+      .page .entry-content em img {
+        margin-bottom: 10px; }
+    /* line 42, ../sass/page.sass */
+    .page .entry-content strong {
+      font-weight: bold; }
+    /* line 44, ../sass/page.sass */
+    .page .entry-content .box-top {
+      position: absolute;
+      top: 0px;
+      left: 220px;
+      line-height: 18px; }
+      /* line 49, ../sass/page.sass */
+      .page .entry-content .box-top h4 {
+        font-weight: bold; }
+    /* line 51, ../sass/page.sass */
+    .page .entry-content .box-top-2 {
+      left: 400px; }

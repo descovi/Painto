@@ -5,7 +5,7 @@ Template Name: Portfolio
 get_header();
 ?>
 <div class="portfolio">
-  <?php add_filter( 'post_limits', -1 ); ?>
+<?php //add_filter('post_limits', -1 ); ?>
 <?php
 
 $the_query = new WP_Query(array('post_type'=>'proggeto')); 

@@ -34,51 +34,23 @@ if ( $site_description && ( is_home() || is_front_page() ) )
 <!-- css default -->
 <link href="<?php echo get_stylesheet_directory_uri(); ?>/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
-<!-- jquery -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-
-<!-- fancybox -->
-<link href="<?php echo get_stylesheet_directory_uri(); ?>/fancyBox/source/jquery.fancybox.css?v=2.1.0" media="screen" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/fancyBox/source/jquery.fancybox.pack.js?v=2.1.0"></script>
+<link href="<?php echo get_stylesheet_directory_uri(); ?>/fancyBox/source/jquery.fancybox.min.css" media="screen" rel="stylesheet" type="text/css" />
 
 
 <!-- Optionally add helpers - button, thumbnail and/or media -->
-<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/fancyBox/source/helpers/jquery.fancybox-buttons.css?v=1.0.3" type="text/css" media="screen" />
+<!--<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/fancyBox/source/helpers/jquery.fancybox-buttons.css?v=1.0.3" type="text/css" media="screen" />
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/fancyBox/source/helpers/jquery.fancybox-buttons.js?v=1.0.3"></script>
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/fancyBox/source/helpers/jquery.fancybox-media.js?v=1.0.3"></script>
 
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/fancyBox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.6" type="text/css" media="screen" />
-<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/fancyBox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.6"></script>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/fancyBox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.6"></script>-->
 
   <!--[if IE]>
     <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
 
 
-  <script type="text/javascript">
-  $(document).ready(function() {
-$(".fancybox")
-    .fancybox(
-    {
-      helpers : {
-        title: {
-            type: 'outside'
-        }
-      },
-      padding    : 0,
-      margin     : 0,
-      nextEffect : 'fade',
-      prevEffect : 'none',
-      closeBtn: true,
-      autoPlay: false,
-      nextClick: true,
-      beforeLoad: function() {
-        this.title = $(this.element).attr('caption');
-      }
-    })
 
-})
-</script>
 <style>
 .fancybox-close {
     top: 0;

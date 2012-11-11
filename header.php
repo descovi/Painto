@@ -28,8 +28,11 @@ $site_description = get_bloginfo( 'description', 'display' );
 if ( $site_description && ( is_home() || is_front_page() ) )
   echo " | $site_description";
 
-?></title>
+?> - Gabriele Pasqualino</title>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
+
+<link rel="shortcut icon" href="http://25.media.tumblr.com/avatar_14ae2d8d3307_16.png"/>
+<link rel="apple-touch-icon" href="http://25.media.tumblr.com/avatar_14ae2d8d3307_128.png"/>
 
 <!-- css default -->
 <link href="<?php echo get_stylesheet_directory_uri(); ?>/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />

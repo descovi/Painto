@@ -22,15 +22,24 @@ while ( $the_query->have_posts() ) : $the_query->the_post();
     </a>
     <div style="display:none" class="gallery_the_other">
     <?php 
-    $members = get_group('gallery');
-    
-    foreach ($members as $key => $value):
+    // gallery
+    $gallery = get_group('gallery');
+    foreach ($gallery as $key => $value):
       if ($key != 1):
         $img = get_image('img_images',$key,$value,0,NULL,array("q"=>90));
-        $info = get('img_info',$key,$value) ?>
+        $info = get('img_info',$key,$value) ;
+        $img_ex = get_image('img_images',$key,$value,0,NULL,array("q"=>90));
+        ?>        
         <a rel="group_<? echo $counter ?>" href="<?php echo $img ?>" class="fancybox" caption="<?php echo $info ?>"></a><?  
       endif;
-     endforeach ;
+     endforeach;
+     // video
+     $video = get_group('video');
+      foreach ($video as $key => $value):
+        $video_url = get('video_url',$key,$value);
+        $info = get('video_info',$key,$value) ?>
+        <a rel="group_<? echo $counter ?>" href="<?php echo $video_url ?>" class="fancybox fancybox-media" caption="<?php echo $info ?>"></a><?
+     endforeach;
     ?>
     </div>
   </div>

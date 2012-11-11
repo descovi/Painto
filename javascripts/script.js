@@ -1,16 +1,15 @@
 $(document).ready(function() {
-$(".fancybox")
+$(".fancybox").attr('rel', 'group_1')
     .fancybox(
     {
       helpers : {
         title: {
             type: 'outside'
-        }
+        },
+        media : true
       },
       padding    : 0,
       margin     : 0,
-      nextEffect : 'fade',
-      prevEffect : 'none',
       closeBtn: true,
       autoPlay: false,
       nextClick: true,

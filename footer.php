@@ -13,6 +13,7 @@
 
 <!-- fancybox -->
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/fancyBox/source/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/fancyBox/source/helpers/jquery.fancybox-media.js"></script>
 
   <script type="text/javascript">
 
